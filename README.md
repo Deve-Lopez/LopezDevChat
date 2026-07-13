@@ -10,6 +10,22 @@ Aplicación desarrollada para investigar cómo integrar un **LLM ejecutándose c
 
 ![LopezDevChat Banner](docs/banner.png)
 
+# 🚀 Probar la aplicación
+
+Puedes probar la aplicación desplegada en Vercel desde el siguiente enlace:
+
+👉 **https://lopezdevchat.vercel.app/**
+
+> **Nota:** El modelo de IA se ejecuta en mi equipo mediante **Ollama**. La disponibilidad de la aplicación depende de que el modelo esté en funcionamiento y el túnel de **LocalTunnel** esté activo.
+
+---
+
+# 📷 Captura de la aplicación
+
+A continuación se muestra la interfaz principal de LopezDevChat.
+
+![Interfaz de LopezDevChat](docs/chat.png)
+
 <br>
 
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)
