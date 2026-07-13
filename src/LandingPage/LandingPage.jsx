@@ -7,7 +7,7 @@ export default function LandingPage({ onEnter }) {
         <span className="landing-nav__brand">AI DeveLopez</span>
         
         <a 
-          href="https://github.com/tu-usuario/tu-repo"
+          href="https://github.com/Deve-Lopez/LopezDevChat"
           target="_blank"
           rel="noreferrer"
           className="landing-nav__link"
@@ -42,7 +42,7 @@ export default function LandingPage({ onEnter }) {
 
       <footer className="landing-footer">
         <span>Daniel López</span>
-        <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noreferrer">
+        <a href="www.linkedin.com/in/lopezsantajustinadaniel" target="_blank" rel="noreferrer">
           LinkedIn
         </a>
       </footer>
