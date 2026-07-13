@@ -42,7 +42,7 @@ export default function LandingPage({ onEnter }) {
 
       <footer className="landing-footer">
         <span>Daniel López</span>
-        <a href="www.linkedin.com/in/lopezsantajustinadaniel" target="_blank" rel="noreferrer">
+        <a href="https://www.linkedin.com/in/lopezsantajustinadaniel" target="_blank" rel="noreferrer">
           LinkedIn
         </a>
       </footer>
