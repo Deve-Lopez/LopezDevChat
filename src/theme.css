@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Figtree:wght@400;500;600&display=swap');
+
+:root {
+  --qwen-bg: #FBF5EF;
+  --qwen-surface: #FFFFFF;
+  --qwen-surface-warm: #F3EAE0;
+  --qwen-border: #E8DDD0;
+  --qwen-text: #3A322C;
+  --qwen-text-secondary: #948676;
+  --qwen-accent: #C9963B;
+  --qwen-accent-soft: #F0E2C8;
+}
+
+/* Anula el ancho fijo de #root (1126px, heredado de tu plantilla base)
+   solo cuando dentro hay landing o chat, sin tocar otras páginas */
+#root:has(.landing),
+#root:has(.qwen-chat-container) {
+  width: 100%;
+  border-inline: none;
+}
