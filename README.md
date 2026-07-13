@@ -2,9 +2,9 @@
 
 # 🤖 LopezDevChat
 
-### Explorando la integración de modelos de lenguaje locales en aplicaciones modernas
+### Explorando la integración de modelos de lenguaje locales en aplicaciones web
 
-Aplicación desarrollada para investigar cómo integrar un **LLM ejecutándose en local** dentro de una arquitectura real utilizando **React**, **ASP.NET Core** y **Ollama**.
+Aplicación desarrollada para investigar cómo integrar un **LLM ejecutándose completamente en local** dentro de una aplicación **React**, utilizando **Ollama**, **API Routes de Vercel** y **LocalTunnel** como capa de comunicación.
 
 # 📸 Vista previa
 
@@ -147,11 +147,9 @@ Ese fue el verdadero aprendizaje obtenido durante el desarrollo.
 
 # 🎥 Demostración
 
-> 📌 **Añadir aquí un GIF mostrando una conversación completa.**
+A continuación se muestra el flujo completo de la aplicación: desde el envío de un mensaje por parte del usuario hasta la respuesta generada por un modelo de lenguaje ejecutándose completamente en local mediante Ollama.
 
-```
 ![Demostración de LopezDevChat](docs/demo.gif)
-```
 
 ---
 
@@ -183,41 +181,18 @@ La aplicación sigue una arquitectura desacoplada donde la interfaz de usuario n
 
 En su lugar, todas las solicitudes pasan por una **API Route**, que actúa como capa de integración entre el cliente y el servicio de IA.
 
+```mermaid
 flowchart LR
 
-subgraph Cliente
+A["👤 Usuario"] --> B["⚛️ React"]
 
-A["👤 Usuario"]
+B --> C["▲ API Route (Vercel)"]
 
-B["⚛️ React"]
+C --> D["🌐 LocalTunnel"]
 
-end
+D --> E["🤖 Ollama"]
 
-subgraph Integración
-
-C["▲ API Route"]
-
-end
-
-subgraph Infraestructura Local
-
-D["🌐 LocalTunnel"]
-
-E["🤖 Ollama"]
-
-F["🧠 Qwen2.5"]
-
-end
-
-A --> B
-
-B --> C
-
-C --> D
-
-D --> E
-
-E --> F
+E --> F["🧠 Qwen2.5-Coder 1.5B"]
 
 F --> E
 
