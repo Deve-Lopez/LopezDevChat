@@ -22,7 +22,7 @@ export default async function handler(req, res) {
           'Bypass-Tunnel-Reminder': 'true'
         },
         body: JSON.stringify({
-          model: 'qwen2.5-coder:1.5b',
+          model: 'qwen2.5:3b',
           messages: messages,
           stream: false
         })
